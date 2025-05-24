@@ -33,7 +33,7 @@
   
   nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #086788;
     font-weight: bold;
   }
   
@@ -59,7 +59,7 @@
   }
   
   .book-now {
-    background-color: #0d5c63;
+    background-color: #086788;
     color: white;
     padding: 10px 25px;
     font-size: 18px;
@@ -70,39 +70,93 @@
   }
   
   .booking-section h2 {
-    color: #0b4a7f;
+    color: #086788;
     margin: 10px 0;
+  }
+
+  .booking-section p {
+    color: #086788
   }
   
   .cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    background: linear-gradient(to top, #ffd700, transparent 60%);
-    border-radius: 20px;
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-  
-  .card img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-  }
-  
-  .card button {
-    background: transparent;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0;
-    cursor: pointer;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  background: #f0c808;
+  border-radius: 25px;
+  padding: 2.5px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  border-radius: 22.5px;
+  overflow: hidden;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 22.5px;
+}
+
+.card-img-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%; height: 100%;
+  border-radius: 22.5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 60%,
+    #f0c808 100%
+  );
+  pointer-events: none;
+}
+
+.card img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 22.5px;
+  display: block;
+}
+
+.card-content {
+  background: none;
+  width: 100%;
+  padding: 15px 10px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card-content p {
+  font-size: 13px;
+  color: #086788;
+  margin-top: 5px;
+}
+
   
