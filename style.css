@@ -6,14 +6,16 @@
   }
   
   body {
-    background-color: #fdf2d8;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: initial;
   }
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff7cc;
+    background-color: #fcf5ce;
     padding: 10px 40px;
     position: fixed;
     width: 100%;
@@ -38,22 +40,88 @@
   }
   
   .hero {
-    background: url('beach.jpg') center center/cover no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+
+  .slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
   
-  .hero-text h1 {
-    font-size: 60px;
+  .slide-text h1 {
+    font-size: 120px;
     color: white;
-    text-shadow: 2px 2px 4px #000;
+    font-family: Arial;
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
   }
   
+  .carousel-track-container {
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    height: 100%;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 0 15px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-button.left {
+    left: 10px;
+  }
+  
+  .carousel-button.right {
+    right: 10px;
+  }
+
+
+
+
+
   .booking-section {
-    background-color: #fff2d2;
     text-align: center;
     padding: 50px 20px;
   }
