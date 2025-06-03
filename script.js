@@ -48,5 +48,9 @@ track.addEventListener('transitionend', () => {
 
 window.addEventListener('resize', () => updateSlidePosition(false));
 
+let autoSlideInterval = setInterval(() => {
+  nextButton.click();
+}, 3000); // Change every 3 seconds
+
 // Initial setup
 updateSlidePosition(false);
