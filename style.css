@@ -573,6 +573,200 @@
   font-weight: bold;
 }
 
+.booking-details-section {
+  margin-top: 60px;
+  padding: 75px 150px;
+  min-height: calc(100vh - 60px); /* Adjust based on your footer height */
+  font-family: inherit;
+}
+
+.booking-details-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+
+.booking-details-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.booking-details-header {
+  margin-bottom: 18px;
+}
+
+.booking-details-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 18px;
+  color: #dd1c1a;
+  margin-bottom: 8px;
+}
+
+.booking-details-meta .meta-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  vertical-align: middle;
+  border-radius: 0;
+}
+
+.booking-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.booking-price {
+  color: #dd1c1a;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.booking-details-info {
+  width: 100%
+}
+
+.booking-details-info p {
+  text-align: justify;
+}
+
+.booking-details-image {
+  flex: 1;
+  align-self: flex-start;
+}
+
+.booking-details-image img {
+  width: 380px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+.booking-inclusions-exclusions {
+  display: flex;
+  gap: 48px;
+  margin-top: 18px;
+}
+
+.booking-inclusions-exclusions strong {
+  display: block;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.booking-inclusions-exclusions ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 15px;
+}
+
+.booking-itinerary {
+  margin: 32px 0 0 0px;
+}
+
+.itinerary-title {
+  background: #dd1c1a;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px 24px;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.itinerary-content {
+  display: flex;
+  gap: 48px;
+  background: #fff8ec;
+  padding: 18px 24px;
+  border-radius: 0 0 18px 18px;
+  font-size: 15px;
+  color: #222;
+}
+
+.booking-guests-section {
+  margin: 32px 0 0 0px;
+}
+
+.guests-title {
+  background: #dd1c1a;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px 24px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.guests-form {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.guests-form input[type="number"],
+.guests-form input[type="date"] {
+  padding: 16px 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  width: 33.3%;
+  background: #fff;
+}
+
+.booking-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  margin: 24px 0 0 0;
+}
+
+.booking-total-price {
+  color: #dd1c1a;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 18px;
+}
+
+.add-to-cart-btn,
+.book-now-btn {
+  background: #fff;
+  color: #dd1c1a;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.book-now-btn {
+  background: #dd1c1a;
+  color: #fff;
+  margin-right: 0;
+}
+
+.add-to-cart-btn:hover {
+  background: #ffe5e5;
+}
+
+.book-now-btn:hover {
+  background: #b81717;
+}
+
 footer {
   background: #086788;
   color: #fff;
